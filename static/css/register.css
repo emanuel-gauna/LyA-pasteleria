@@ -1,0 +1,37 @@
+@import url("style.css");
+
+@media only screen and (min-width: 992px) {
+    /* Estilos para escritorio */
+
+.form-group{
+    font-family: "RockRoll One", sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    background-color: var(--color-fuentes);
+    border-radius: 25px;
+}
+.form-button {
+    padding: 10px 50px;
+    margin: 20px 50px 20px 50px;
+    cursor: pointer;
+    background-color: rgb(47, 221, 47);
+    border: none;
+    border-radius: 25px;
+  }
+  .form-button + .form-button {
+    background-color: rgb(239, 157, 127);
+  }
+label{
+    font-size: 2vw;
+
+}
+}
+/* Tabletas */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para tabletas */
+}
+/* Dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    /* Estilos para dispositivos móviles */
+}
