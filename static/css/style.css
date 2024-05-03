@@ -34,6 +34,10 @@
   box-sizing: border-box;
 }
 
+body{
+  height: 100vh;
+}
+
 .tabla {
   font-size: var(--parrafo-size);
   font-family: var(--fuente-secundaria);
@@ -126,8 +130,8 @@ img {
   font-size: 14px;
 }
 .centrado a {
-  margin: 10px auto;
-  padding: 10px 20px; /* Ajusta el padding para reducir el tamaño del botón */
+  margin: 20px auto;
+  padding: 10px; /* Ajusta el padding para reducir el tamaño del botón */
   font-size: 20px; /* Ajusta el tamaño de la fuente según sea necesario */
   background-color: rgb(181, 199, 214);
   border-radius: 5px;
@@ -212,19 +216,28 @@ footer{
 }
 .carousel-item img {
   object-fit: cover;
-  height: 400px; /* Ajusta la altura según sea necesario */
- 
-  margin: auto;
+  max-width: 500px; /* Ajusta la altura según sea necesario */
+  border-radius: 18px;
 }
+
+.carousel-item .carousel-caption h5,
+.carousel-item .carousel-caption p {
+  color: var(--color-primary);
+  -webkit-text-stroke: 1px black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .carousel-caption h5,
     .carousel-caption p{
       color: #070707; /* Color oscuro para el texto */
-    }
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
       background-color: red; /* Color de fondo rojo */
-      border-radius: 25px 25px 25px 25px;
-    }
+      border-radius: 50%;
+}
 
 
 /* Establece el tamaño de fuente del body en función del ancho de la ventana */
