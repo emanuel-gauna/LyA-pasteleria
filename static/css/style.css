@@ -222,14 +222,12 @@ footer{
 
 .carousel-item .carousel-caption h5,
 .carousel-item .carousel-caption p {
-  color: var(--color-primary);
-  -webkit-text-stroke: 1px black;
   font-size: 24px;
   font-weight: bold;
 }
 
 .carousel-caption h5,
-    .carousel-caption p{
+.carousel-caption p{
       color: #070707; /* Color oscuro para el texto */
 }
 
