@@ -34,10 +34,6 @@
   box-sizing: border-box;
 }
 
-body{
-  height: 100vh;
-}
-
 .tabla {
   font-size: var(--parrafo-size);
   font-family: var(--fuente-secundaria);
@@ -76,18 +72,6 @@ p {
 
 }
 
-.background-container {
-  background-image: url("../img/Captura\ de\ pantalla\ 2024-03-17\ 201208.png");
-  background-size: contain;
-  background-position: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5; /* Ajusta la opacidad según tu preferencia */
-  z-index: -1; /* Asegura que el contenedor de fondo esté detrás de los otros elementos */
-}
 header {
   background-color: var(--color-primary);
 }
@@ -98,8 +82,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.titulo-animado{
-       
+.titulo-animado{   
         animation-name: cambiarColor;
         animation-duration: 4s;
         animation-timing-function: ease;
@@ -115,10 +98,31 @@ img {
     100% {color: rgb(53, 4, 37);}
     /* Último fotograma */
    }
+
+.presentacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+   
 .titulo-principal {
   color: var(--color-secondary);
   font-family: "RockRoll One", sans-serif;
   font-weight: bold;
+  margin-top: 20px;
+}
+
+.banner img{
+  border-radius: 18px;
+}
+
+.nosotros{
+  width: 60%;
+}
+
+.carrousel{
+  margin-top: 20px;
 }
 
 .centrado {
@@ -216,7 +220,7 @@ footer{
 }
 .carousel-item img {
   object-fit: cover;
-  max-width: 500px; /* Ajusta la altura según sea necesario */
+  width: 100%; /* Ajusta la altura según sea necesario */
   border-radius: 18px;
 }
 
@@ -230,18 +234,3 @@ footer{
 .carousel-caption p{
       color: #070707; /* Color oscuro para el texto */
 }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-      background-color: red; /* Color de fondo rojo */
-      border-radius: 50%;
-}
-
-
-/* Establece el tamaño de fuente del body en función del ancho de la ventana */
-
-  
-  /* Establece el tamaño de fuente de un encabezado h1 en función del ancho de la ventana */
-  
-  
- 
