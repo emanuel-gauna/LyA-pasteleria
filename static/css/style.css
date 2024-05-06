@@ -34,6 +34,139 @@
   box-sizing: border-box;
 }
 
+/* Header */
+header {
+  background-color: var(--color-primary);
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  display: block; /* Para que los márgenes automáticos funcionen */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo-animado{   
+        animation-name: cambiarColor;
+        animation-duration: 4s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;     
+}
+
+@keyframes cambiarColor {
+    0% {color: #7a2607;  }
+    25% {color: rgb(147, 170, 15) }
+    /* Primer fotograma */
+    50% {color: green; }
+    75% {color: rgb(6, 59, 80);}
+    /* Segundo fotograma */
+    100% {color: rgb(53, 4, 37);}
+    /* Último fotograma */
+}
+/* Fin Header*/
+
+/* Estilos para el boostrap  - NavBar */
+.navbar{
+  font-family: "Special Elite", sans-serif;
+  font-weight: 600;
+}
+
+.navbar a.navbar-brand{
+  color: brown;
+}
+
+#navbarSupportedContent{
+  display: flex !important;
+  margin-left: 220px;
+}
+
+.nav-item{
+  width: 110px;
+  height: 44px;
+  margin: 5px;
+}
+
+.form-control{
+  width: 150px;
+}
+
+.btn-custom-purple{
+  background-color: #8a2be2; /* Código de color lila */
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  border: transparent solid 2px;
+}
+
+.btn-custom-purple:hover{
+  /* background-color: #ab80d3; */ /* Código de color lila */
+  color: #fff;
+  transform: scale(1.03); /* Color del texto */
+  /* Otras propiedades de estilo según sea necesario */
+  background-color: rgb(229, 124, 182);
+  color: rgb(240, 247, 244);
+  border: white solid 2px;
+}
+/* Fin NavBar */
+
+/* Landing Page - Presentacion */
+.presentacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner img{
+  border-radius: 18px;
+}
+
+.nosotros{
+  width: 60%;
+}
+
+.titulo-principal {
+  color: var(--color-secondary);
+  font-family: "RockRoll One", sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* Fin Presentacion */
+
+/* Recetas */
+/* .recetas-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.cards{
+  position: relative;
+  width: fit-content;
+}
+
+.cards::after{
+  content: 'Muffins de Coco';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 100%;
+  height: 20%;
+  font-weight: bold;
+  font-size: 24px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.295);
+  border-radius: 0 0 18px 18px;
+}
+
+.cards img{
+  position: relative;
+  border-radius: 18px;
+}
+
 .tabla {
   font-size: var(--parrafo-size);
   font-family: var(--fuente-secundaria);
@@ -71,60 +204,9 @@ p {
     font-size: calc(2vw +1rem) ; /* El tamaño de fuente será 2% del ancho de la ventana más 1rem */
 
 }
+/* Fin Recetas */
 
-header {
-  background-color: var(--color-primary);
-}
-img {
-  width: 300px;
-  height: 300px;
-  display: block; /* Para que los márgenes automáticos funcionen */
-  margin-left: auto;
-  margin-right: auto;
-}
-.titulo-animado{   
-        animation-name: cambiarColor;
-        animation-duration: 4s;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;     
-}
-@keyframes cambiarColor {
-    0% {color: #7a2607;  }
-    25% {color: rgb(147, 170, 15) }
-    /* Primer fotograma */
-    50% {color: green; }
-    75% {color: rgb(6, 59, 80);}
-    /* Segundo fotograma */
-    100% {color: rgb(53, 4, 37);}
-    /* Último fotograma */
-   }
-
-.presentacion{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-   
-.titulo-principal {
-  color: var(--color-secondary);
-  font-family: "RockRoll One", sans-serif;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.banner img{
-  border-radius: 18px;
-}
-
-.nosotros{
-  width: 60%;
-}
-
-.carrousel{
-  margin-top: 20px;
-}
-
+ /* Registro */
 div .form-button {
   font-family: "RockRoll One", sans-serif;
   text-decoration: none;
@@ -140,75 +222,13 @@ div .form-button:hover {
 
   transform: scale(1.3);
 }
+
 i.fab{
   font-size: 3vw;
   text-align: center;
 }
+
 a i.fab{
   margin: 0 6px;
 }
-footer{
-  width: 100%;
-}
-/* estilos para el boostrap */
-.navbar{
-  font-family: "Special Elite", sans-serif;
-  font-weight: 600;
-}
-
-.navbar a.navbar-brand{
-  color: brown;
-}
-
-#navbarSupportedContent{
-  display: flex !important;
-  margin-left: 220px;
-}
-
-.nav-item{
-  width: 110px;
-  margin: 5px;
-  padding: auto;
-}
-
-.form-control{
-  width: 150px;
-}
-
-.btn-custom-purple{
-  background-color: #8a2be2; /* Código de color lila */
-  transition: all 0.5s ease;
-  border-radius: 5px;
-  border: transparent solid 2px;
-  
-
-  
-  /* Otras propiedades de estilo según sea necesario */
-}
-.btn-custom-purple:hover{
-  /* background-color: #ab80d3; */ /* Código de color lila */
-  color: #fff;
-  transform: scale(1.03); /* Color del texto */
-  /* Otras propiedades de estilo según sea necesario */
-  background-color: rgb(229, 124, 182);
-  color: rgb(240, 247, 244);
-  border: white solid 2px;
-  
-  
-}
-.carousel-item img {
-  object-fit: cover;
-  width: 100%; /* Ajusta la altura según sea necesario */
-  border-radius: 18px;
-}
-
-.carousel-item .carousel-caption h5,
-.carousel-item .carousel-caption p {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.carousel-caption h5,
-.carousel-caption p{
-      color: #070707; /* Color oscuro para el texto */
-}
+/* Fin Registro */
