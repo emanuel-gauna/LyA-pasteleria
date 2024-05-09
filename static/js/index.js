@@ -17,7 +17,7 @@ let  header = `
         <a class="nav-link active " aria-current="page" href="./templates/contacto.html">Contacto</a>
         </li>
       <li class="nav-item  btn-custom-purple">
-        <a class="nav-link active " aria-current="page" href="./templates/contacto.html">Insumos</a>
+        <a class="nav-link active " aria-current="page" href="./templates/sucursales.html">Insumos</a>
         </li>
       <li class="nav-item ">
         <button type="button" class="btn btn-custom-purple">
