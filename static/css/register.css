@@ -1,7 +1,6 @@
 @import url("style.css");
 
-@media only screen and (min-width: 992px) {
-    /* Estilos para escritorio */
+
 
 .form-group{
     font-family: "RockRoll One", sans-serif;
@@ -25,29 +24,4 @@
 label{
     font-size: 2vw;
 
-}
-}
-/* Tabletas */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .form-group{
-        font-family: "RockRoll One", sans-serif;
-        text-align: center;
-        width: 60%;
-        margin: auto;
-        background-color: var(--color-fuentes);
-        border-radius: 25px;
-    }
-    /* Estilos para tabletas */
-}
-/* Dispositivos móviles */
-@media only screen and (max-width: 767px) {
-    /* Estilos para dispositivos móviles */
-    .form-group{
-    font-family: "RockRoll One", sans-serif;
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    background-color: var(--color-fuentes);
-    border-radius: 25px;
-}
 }
