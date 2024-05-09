@@ -46,43 +46,43 @@
   </header>
   <main>
     <h1 class="titulo-principal">Completa con tus datos</h1>
-    <section>
+    <section class="formulario">
       <form class="form-registro" action="show_data.html" target="_blank">
         <fieldset class="form-group">
-
-          <br>
-          <label for="fname">Nombre:</label>
-          <input type="text" id="fname" name="fname" placeholder="ingrese su nombre" required><!-- <br><br> -->
-          <label for="lname">Apellido:</label>
-          <input type="text" id="lname" name="lname" placeholder="ingrese su apellido" required><br><br>
-          <label for="direccion">Direccion:</label>
-          <input type="text" id="direccion" name="direccion" placeholder="calle/1234">
-          <label for="ciudad">Ciudad:</label>
-          <select id="ciudad" name="ciudad">
-            <option value="1">Buenos Aires</option>
-            <option value="2">jujuy</option>
-            <option value="3">Catamarca</option>
-            <option value="4">Cordoba</option>
-            <option value="5">Santa Fe</option>
-            <option value="6">San Luis</option>
-            <option value="7">Santiago del Estero</option>
-            <option value="8">la Rioja</option>
-            <option value="9">Corrientes</option>
-            <option value="10">Formosa</option>
-            <option value="11">Misiones</option>
-            <option value="12">Salta</option>
-            <option value="13">Chubut</option>
-            <option value="14">tierra del Fuego</option>
-            <option value="15">Santa Cruz</option>
-          </select><br><br>
-          <label for="cp">Codigo postal:</label>
-          <input type="number" id="cp" name="cp" required placeholder="0000">
-          <label for="birthdate">Fecha de Nacimiento:</label>
-          <input type="date" id="birthdate" name="birthdte" required><br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="correo@mail.com">
-          <label for="tel">Tel:</label>
-          <input type="tel" id="tel" name="tel" placeholder="sin 0 ni 15 ej: 1122334455"><br><br>
+          <div class="personal">
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" placeholder="ingrese su nombre" required>
+            <label for="lname">Apellido:</label>
+            <input type="text" id="lname" name="lname" placeholder="ingrese su apellido" required>
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="calle/1234">
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+              <option value="1">Buenos Aires</option>
+              <option value="2">jujuy</option>
+              <option value="3">Catamarca</option>
+              <option value="4">Cordoba</option>
+              <option value="5">Santa Fe</option>
+              <option value="6">San Luis</option>
+              <option value="7">Santiago del Estero</option>
+              <option value="8">la Rioja</option>
+              <option value="9">Corrientes</option>
+              <option value="10">Formosa</option>
+              <option value="11">Misiones</option>
+              <option value="12">Salta</option>
+              <option value="13">Chubut</option>
+              <option value="14">tierra del Fuego</option>
+              <option value="15">Santa Cruz</option>
+            </select>
+            <label for="cp">Codigo postal:</label>
+            <input type="number" id="cp" name="cp" required placeholder="0000">
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdte" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="correo@mail.com">
+            <label for="tel">Tel:</label>
+            <input type="tel" id="tel" name="tel" placeholder="sin 0 ni 15 ej: 1122334455">
+          </div>
           <!-- checkbox -->
           <!-- radio -->
           <h2>Genero : </h2>

@@ -31,7 +31,7 @@
   /* otros valores */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  height: 100%;
 }
 
 /* Header */
@@ -108,6 +108,10 @@ img {
   border: white solid 2px;
 }
 /* Fin NavBar */
+
+main{
+  height: 100vh;
+}
 
 /* Landing Page - Presentacion */
 .presentacion{
@@ -219,16 +223,30 @@ p {
 .contactos-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-top: 40px;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.contactos-container h1{
+  font-weight: bold;
 }
 
 .contactos-lista{
+  margin-top: 40px;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 32px;
+}
+
+.contactos-lista li a {
+  text-decoration: none;
+}
+
+.contactos-lista li:hover a {
+  font-weight: bold;
 }
 
 i.fab{
