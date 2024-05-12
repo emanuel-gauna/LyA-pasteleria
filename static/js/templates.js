@@ -51,6 +51,8 @@ function obtenerTituloDePagina() {
             return "Obtene tus insumos en:";
         case "/templates/registro.html":
             return "Sección de registro";
+        case "/templates/show_data.html":
+            return "Registro exitoso";
         // Agrega más casos según las páginas que tengas
         default:
             return "Bienvenido a la Home"; // Si no coincide con ninguna página, muestra este título por defecto
