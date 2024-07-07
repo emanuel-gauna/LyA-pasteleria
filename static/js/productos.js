@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const tarjetaHTML = `
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src="../${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+                            <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
                             <div class="card-body">
                                 <h3 class="card-title"><strong>${producto.nombre}</strong></h3>
                                 <p class="card-text" style="color: blue;">${producto.descripcion}</p>
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <a href="./productDetail.html?id=${producto.id}" class="btn btn-sm btn-custom-purple">Ver más</a>
                                     <button type="button" class="btn btn-sm btn-outline-primary bg-pink">Comprar</button>
                                     </div>
-                                    <h3 style="color: green;">$${producto.precio}</h3>
+                                    <h3 style="color: green;">${producto.precio}</h3>
                                     <span>${disponibleIcono}</span>
                                 </div>
                             </div>
