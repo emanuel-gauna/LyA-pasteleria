@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const tarjetaHTML = `
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+                            <img src="..${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
                             <div class="card-body">
                                 <h3 class="card-title"><strong>${producto.nombre}</strong></h3>
                                 <p class="card-text" style="color: blue;">${producto.descripcion}</p>
