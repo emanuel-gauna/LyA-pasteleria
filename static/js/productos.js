@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <p class="card-text" style="color: blue;">${producto.descripcion}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-custom-purple">Ver más</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary bg-pink">Comprar</button>
+                                    <a href="./productDetail.html?id=${producto.id}" class="btn btn-sm btn-custom-purple">Ver más</a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary bg-pink">Comprar</button>
                                     </div>
                                     <h3 style="color: green;">$${producto.precio}</h3>
                                     <span>${disponibleIcono}</span>
