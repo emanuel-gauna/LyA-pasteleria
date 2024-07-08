@@ -207,7 +207,20 @@ footer{
   color: rgb(240, 247, 244);
   border: white solid 2px;
   
-  
+}
+.btn-custom-green{
+  background-color: #00ff00;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  border: transparent solid 2px;
+}
+.btn-custom-green:hover{
+  color: #fff;
+  transform: scale(1.03); /* Color del texto */
+  /* Otras propiedades de estilo según sea necesario */
+  background-color: rgb(68, 165, 115);
+  color: rgb(240, 247, 244);
+  border: white solid 2px;
 }
 .carousel-item img {
   object-fit: cover;

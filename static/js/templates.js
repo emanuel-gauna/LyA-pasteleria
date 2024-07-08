@@ -33,7 +33,7 @@ let navbarTemplates = (titulo) => `
 </div>
 </nav>
     <div class="titulo-animado">
-       <h1>${titulo}</h1> <!-- Aquí se mostrará el título de la página -->
+      <h1>${titulo}</h1> <!-- Aquí se mostrará el título de la página -->
     </div>
 `;
 
@@ -53,6 +53,8 @@ function obtenerTituloDePagina() {
             return "Sección de registro";
         case "/templates/show_data.html":
             return "Registro exitoso";
+        case "/templates/login.html":
+          return "Inicia sesión";
         // Agrega más casos según las páginas que tengas
         default:
             return "Bienvenido a la Home"; // Si no coincide con ninguna página, muestra este título por defecto

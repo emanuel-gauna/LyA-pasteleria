@@ -27,6 +27,10 @@ let  header = `
     <form class="d-flex">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-custom-purple" type="submit">Search</button>
+      <li class="nav-item ">
+        <button class="btn btn-custom-green" type="submit">
+        <a class="nav-link active" aria-current="page" href="./templates/login.html">inicio admin</a></button>
+        </li>
     </form>
   </div>
 </div>
