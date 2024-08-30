@@ -60,6 +60,8 @@ section.receta-text li{
 h1,
 h2,
 h3 {
+  background-color: white;
+  
   font-family: "Special Elite", sans-serif;
   text-align: center;
   font-size: var(--titulo-size); /* Por ejemplo, el tamaño del encabezado será el 4% del ancho de la ventana */
