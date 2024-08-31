@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contenedorProductos = document.getElementById("contenedorProductos");
 
-    // Ajusta esta URL según la configuración de tu backend
-    const API_URL = 'http://localhost:5000/api/productos';  // URL del backend
-    const BASE_IMG_URL = 'http://localhost:5000/static/img/';  // URL base para las imágenes
+    // Ajusta esta URL según la configuración de tu API
+    const API_URL = 'http://127.0.0.1:5000/api/productos';  // URL del backend
+    // Base URL de las imágenes en GitHub Pages
+    const BASE_IMG_URL = 'https://emanuel-gauna.github.io/LyA-pasteleria/static/img/';
 
     // Función para obtener productos desde la API REST
     async function obtenerProductos() {
