@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contenedorProducto = document.getElementById("contenedorProducto");
 
+    const BASE_IMG_URL = 'https://emanuel-gauna.github.io/LyA-pasteleria/static/img/';
+
     // Función para obtener un producto desde la API REST por ID
     async function obtenerProducto(productoId) {
         try {
@@ -17,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Generar el HTML de la tarjeta Bootstrap para el producto actual
             const tarjetaHTML = `
                 <div class="card mb-4 shadow-sm">
-                    <img src="/static/img/${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+                    <img src="${BASE_IMG_URL}${encodeURIComponent(producto.imagen)}" class="card-img-top" alt="${producto.nombre}">
                     <div class="card-body">
                         <h3 class="card-title"><strong>${producto.nombre}</strong></h3>
                         <p class="card-text" style="color: blue;">${producto.descripcion}</p>
