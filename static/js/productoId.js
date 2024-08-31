@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const producto = await response.json();
-            console.log(producto); // Para verificar los datos obtenidos
+            console.log(producto); // Verificar datos obtenidos
 
             // Determinar el icono para la disponibilidad del producto
             const disponibleIcono = producto.disponible ? "disponible ✔️" : "no disponible ❌";
