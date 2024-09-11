@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contenedorProductos = document.getElementById("contenedorProductos");
 
-    // Ajusta esta URL según la configuración de tu API
+    // URL de la API desde tu backend
     const API_URL = 'http://127.0.0.1:5000/api/productos';  // URL del backend
-    // Base URL de las imágenes en GitHub Pages
+    // Base URL para las imágenes en GitHub Pages
     const BASE_IMG_URL = 'https://emanuel-gauna.github.io/LyA-pasteleria/static/img/';
 
     // Función para obtener productos desde la API REST
@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(API_URL);
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`Error HTTP! estado: ${response.status}`);
             }
             const productos = await response.json();
-            console.log(productos); // Para verificar los datos obtenidos
+            console.log(productos); // Verifica los datos en la consola
 
             productos.forEach(producto => {
                 // Determinar el icono para la disponibilidad del producto
