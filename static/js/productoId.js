@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para obtener un producto desde la API REST por ID
     async function obtenerProducto(productoId) {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/api/productos/${productoId}`); // Ajusta la URL según tu configuración
+            const response = await fetch(`https://pasteleria-api-rest-python.onrender.com/api/productos/${productoId}`); // Ajusta la URL según tu configuración
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

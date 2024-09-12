@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedorProductos = document.getElementById("contenedorProductos");
 
     // URL de la API desde tu backend
-    const API_URL = 'http://127.0.0.1:5000/api/productos';  // URL del backend
+     const API_URL = 'https://pasteleria-api-rest-python.onrender.com/api/productos';  // URL del backend */
     // Base URL para las imágenes en GitHub Pages
     const BASE_IMG_URL = 'https://emanuel-gauna.github.io/LyA-pasteleria/static/img/';
 
